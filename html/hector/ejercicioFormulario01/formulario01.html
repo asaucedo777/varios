@@ -1,0 +1,77 @@
+<!DOCTYPE HTML
+    PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head>
+    <title>Formulario Donaciones</title>
+</head>
+
+<body style="display: flex; justify-content: center; font-family: 'Times New Roman', Times, serif;">
+    <form action="mailto:web@real.es" method="post">
+        <table style="width: 390px; height: 500px; border-style: solid;">
+            <tbody style="border: 1px solid black;">
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black; text-align: center;"
+                        colSpan="2">
+                        <h1>
+                            <span style="color: red;">DONACIÓN </span>
+                            <a href="http://donacionesreales.es">
+                                <img
+                                    src="./Corona.png" alt="Corona">
+                            </a>
+                        </h1>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">
+                        <label for="usuario">Usuario:</label>
+                        <input style="width: 90px;" name="usuario" maxlength="16" />
+                    </td>
+                    <td style="border: 1px solid black;">
+                        <label for="password">Password:</label>
+                        <input style="width: 90px;" name="password" type="password" maxlength="16" />
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;" colSpan="2">
+                        <fieldset>
+                            <legend>Datos del pago</legend>
+                            <label>Forma de pago</label>
+                            <input name="fpago" type="radio" checked value="tarjeta" />Tarjeta
+                            <input name="fpago" type="radio" value="cuenta" />Cuenta bancaria
+                            </br>
+                            </br>
+                            <label>Cantidad:</label>
+                            <select name="cantidad" id="cantidad" >
+                                <option label="5 Euros" value="5"></option>
+                                <option label="10 Euros" value="10" selected></option>
+                                <option label="15 Euros" value="15"></option>
+                            </select>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;" colSpan="2">
+                        <p style="font-style: italic;">Comentario:</p>
+                        <textarea cols="45" rows="8"></textarea>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black; text-align: center;"
+                        colspan="2">
+                        <input name="terminos" type="checkbox" checked >Acepto los <a
+                            href="http://donacionesreales.es/terminos.html">términos</a>.
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black; ">
+                        <input type="submit" value="Pagar donativo">
+                    </td>
+                    <td
+                        style="border: 1px solid black; text-align: end;">
+                        <input type="reset" value="Borrar formulario">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
